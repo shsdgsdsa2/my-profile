@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Khoa Tran | Master Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="loader-screen">
+        <div class="star-layer"></div>
+        <div class="loader-content">
+            <div class="orbit-spinner"></div>
+            
+            <div id="loading-box">
+                <p class="loading-text">INITIALIZING...</p>
+                <h2 id="percent">0%</h2>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <button id="access-btn" class="neon-btn">
+                <i class='bx bx-power-off'></i> CLICK TO ACCESS
+            </button>
+        </div>
+    </div>
+
+    <canvas id="neon-trail"></canvas>
+
+    <header class="header hidden-element">
+        <a href="#" class="logo">KhoaTran<span class="dot">.</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content hidden-element">
+            <h3>Hello, It's Me</h3>
+            <h1>Đăng Khoa</h1>
+            <h3>And I am a <span class="typing-text"></span></h3>
+            <p>Code dạo vì đam mê. Thích nghịch ngợm với Discord Bot và làm Web đơn giản. Luôn online 22/7 để hỗ trợ.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61577039354746" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://discord.com/users/1265702432701284395" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+                <a href="mailto:khoatran3102011@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="https://github.com/shsdgsdsa2" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+
+        <div class="home-img hidden-element tilt-card">
+            <div class="avatar-wrapper">
+                <div class="glow-ring"></div>
+                <div class="glow-ring ring-2"></div>
+                <img src="./assets/avatar.jpg" alt="Khoa Tran">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img tilt-card">
+            <div class="img-container-2">
+                <img src="./assets/avatar.jpg" alt="About Avatar">
+                <div class="dashed-orbit"></div>
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Bot Developer & <span>Student</span></h3>
+            <div class="info-list">
+                <div class="info-item"><i class='bx bxs-calendar'></i> <span>Năm sinh:</span> 3/10/2011</div>
+                <div class="info-item"><i class='bx bxs-map'></i> <span>Quê quán:</span> Quảng Nam</div>
+                <div class="info-item"><i class='bx bxs-heart'></i> <span>Trạng thái:</span> Độc thân</div>
+                <div class="info-item"><i class='bx bxs-joystick'></i> <span>Sở thích:</span> Game, Code, Ngủ</div>
+                <div class="info-item"><i class='bx bxs-bowl-rice'></i> <span>Món ăn:</span> Cơm Tấm , Bún Đậu Mắm Tôm</div>
+                <div class="info-item"><i class='bx bxs-drink'></i> <span>Đồ uống:</span> Sting Đỏ/Vàng, Coca, Pepsi </div>
+            </div>
+            <p class="bio">Mình là Khoa, một người đam mê coding. Tuy mới bắt đầu nhưng mình luôn cố gắng làm hết sức mình </p>
+            <a href="#contact" class="btn-box">Liên Hệ Ngay</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-left">
+                <h3 class="skill-head">Coding Stats</h3>
+                <div class="skill-item">
+                    <div class="info"><span>Python</span><span>15%</span></div>
+                    <div class="bar"><span class="progress python"></span></div>
+                </div>
+                <div class="skill-item">
+                    <div class="info"><span>HTML/CSS</span><span>10%</span></div>
+                    <div class="bar"><span class="progress html"></span></div>
+                </div>
+                <div class="skill-item">
+                    <div class="info"><span>Node/Java</span><span>5%</span></div>
+                    <div class="bar"><span class="progress java"></span></div>
+                </div>
+                <div class="status-live">
+                    <span class="dot-live"></span> Online 22/7
+                </div>
+            </div>
+
+            <div class="skills-right tilt-card">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <span class="filename">profile.py</span>
+                    </div>
+                    <div class="window-body">
+                        <div class="line"><span class="kwd">class</span> <span class="cls">KhoaTran</span>:</div>
+                        <div class="line indent"><span class="kwd">def</span> <span class="func">__init__</span>(<span class="self">self</span>):</div>
+                        <div class="line double"><span class="self">self</span>.name = <span class="str">"Khoa Trần"</span></div>
+                        <div class="line double"><span class="self">self</span>.role = <span class="str">"Bot Developer"</span></div>
+                        <div class="line double"><span class="self">self</span>.skills = [</div>
+                        <div class="line triple"><span class="str">"Discord Bot"</span>,</div>
+                        <div class="line triple"><span class="str">"Website"</span></div>
+                        <div class="line double">]</div>
+                        <div class="line indent"><span class="comment"># Code for life!</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box tilt-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTigy9BIEDc_a5xSnxIujVnFoyABEiSs0acZmVv6aTGWg&s=10" alt="Discord Bot">
+                <div class="portfolio-layer">
+                    <h4>Discord Bot</h4>
+                    <p>Bot quản lý Server, Ticket, Moderation tự động hóa.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box tilt-card">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1000&auto=format&fit=crop" alt="Website">
+                <div class="portfolio-layer">
+                    <h4>Personal Website</h4>
+                    <p>Website Store Và Các Thứ Khác .</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="c-name" placeholder="Họ và Tên" required>
+                <input type="email" id="c-email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" id="c-phone" placeholder="Số điện thoại">
+                <input type="text" id="c-subject" placeholder="Tiêu đề">
+            </div>
+            <textarea id="c-msg" cols="30" rows="10" placeholder="Tin nhắn..."></textarea>
+            <button type="submit" class="btn-box">Gửi Tin Nhắn</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text"><p>Copyright © 2026 by Khoa Tran</p></div>
+        <div class="footer-iconTop"><a href="#home"><i class='bx bx-up-arrow-alt'></i></a></div>
+    </footer>
+
+    <div class="dock-container">
+        <div class="dock-toggle" onclick="toggleDock()"><i class='bx bx-plus'></i></div>
+        <div class="dock-menu" id="dock-menu">
+            <div class="dock-item" onclick="openWidget('spotify')"><i class='bx bxl-spotify'></i></div>
+            <div class="dock-item" onclick="openWidget('snake')"><i class='bx bxs-game'></i></div>
+            <div class="dock-item" onclick="openWidget('calc')"><i class='bx bxs-calculator'></i></div>
+        </div>
+    </div>
+
+    <div class="widget-layer" id="widget-layer">
+        <div class="widget-box" id="wid-spotify">
+            <div class="w-head">Spotify <i class='bx bx-x' onclick="closeWidgets()"></i></div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/playlist/37i9dQZF1E35HwIRI3TgJ1?si=vkRqZPNcSFGejQgTLC1JZg&pi=AaRUeqB3Qieab" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+        <div class="widget-box" id="wid-snake">
+            <div class="w-head">Snake Game <i class='bx bx-x' onclick="closeWidgets()"></i></div>
+            <canvas id="snake-game" width="280" height="280"></canvas>
+            <div class="w-footer">
+                <button onclick="snakeGame.init()">PLAY / RESET</button>
+                <span id="score">Score: 0</span>
+            </div>
+            <div class="mobile-keys">
+                <button onclick="snakeGame.input('UP')">▲</button>
+                <div class="row"><button onclick="snakeGame.input('LEFT')">◀</button><button onclick="snakeGame.input('DOWN')">▼</button><button onclick="snakeGame.input('RIGHT')">▶</button></div>
+            </div>
+        </div>
+        
+        <div class="widget-box" id="wid-calc">
+            <div class="w-head">Calculator <i class='bx bx-x' onclick="closeWidgets()"></i></div>
+            <div class="calc-screen" id="calc-screen">0</div>
+            <div class="calc-grid">
+                <button class="op" onclick="calc.clear()">C</button><button class="op" onclick="calc.del()">DEL</button><button class="op" onclick="calc.add('/')">÷</button><button class="op" onclick="calc.add('*')">×</button>
+                <button onclick="calc.add('7')">7</button><button onclick="calc.add('8')">8</button><button onclick="calc.add('9')">9</button><button class="op" onclick="calc.add('-')">-</button>
+                <button onclick="calc.add('4')">4</button><button onclick="calc.add('5')">5</button><button onclick="calc.add('6')">6</button><button class="op" onclick="calc.add('+')">+</button>
+                <button onclick="calc.add('1')">1</button><button onclick="calc.add('2')">2</button><button onclick="calc.add('3')">3</button><button class="eq" onclick="calc.solve()">=</button>
+                <button class="zero" onclick="calc.add('0')">0</button><button onclick="calc.add('.')">.</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
